@@ -2,12 +2,16 @@
     Body and Container
 */
 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
+@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css); 
+
 html { height: 100%; }
 
 body {
     background-color: #e5e0db;
     margin: 0;
     height: 100%;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
 .container {
@@ -25,7 +29,7 @@ nav {
 }
 #lower {
     flex-grow: 0;
-    height: 100px;
+    height: 15%;
 }
 
 
@@ -44,8 +48,8 @@ nav {
 nav .title {
     margin-left : 15px;
     color: #6c6c6c;
-    font-family: Arial;
     font-weight: bold;
+    font-family: Arial;
 }
 
 nav ul {
@@ -73,31 +77,40 @@ nav ul div {
     width: 100%;
     display: flex;
     justify-content: center;
-    height: 350px;
 }
 
 .paper {
-    transition: transform 1s;
-}
-.paper:active{
-    transform: rotateY(180deg);
-}
-
-.paper {
-    /*visibility: hidden;*/
     margin: auto;
-    height: 350px;
-    background-color: white;
+    width: 600px;
+    height: 50%;
+    background-color: #f2f2f2;
     display: flex;
+    border: 5px solid #7b6953;
 }
 
-.paper img {
-    width: 200px;
+.paper .image {
+    width: 40%;
+    display: flex;
+    padding: 5px;
+    margin-right: 5%;
 }
 
-#brief {
-    width: 500px;
-    margin-left: 50px;
+.paper .image img {
+    max-width: 100%;
+}
+
+.paper .content {
+    width: 55%;
+    word-break: keep-all;
+    font-size: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.paper .content .seperator_line {
+    width: 20px;
+    height: 85%;
+    border-left: 1px solid gray;
 }
 
 /*
@@ -129,7 +142,7 @@ nav ul div {
 
 #lower button p {
     color: white;
-    font-size: 250%;
+    font-size: 150%;
     margin: auto;
 }
 
@@ -147,4 +160,18 @@ nav ul div {
 #lower .seperator_line{
     width: 0px;
     height: 85%;
+}
+
+
+
+
+
+
+.paper {
+    transition: transform 1s, height 1s;
+    backface-visibility: hidden;
+}
+.paper:active {
+    transform: rotateX(180deg);
+    height: 75%;
 }
