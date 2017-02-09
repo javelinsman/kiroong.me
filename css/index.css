@@ -1,0 +1,93 @@
+body {
+    background-color: lightgray;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    background-color: #3c495e;
+    color: white;
+}
+
+nav .title {
+    margin-left : 15px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    /*background-color: blue;*/
+    /*width: 20%;*/
+    margin: 0; /* 꽉 채움 */
+    padding: 0; /* li가 indent 안되도록 함 */
+}
+
+nav ul div {
+    width: 100px;
+    margin: auto;
+    /*background-color: pink;*/
+    text-align: center;
+}
+
+nav ul li{
+    /* 수직 가운데 정렬 */
+    width: 150px;
+    /*margin-top: auto;
+    margin-bottom: auto;*/
+    background-color: pink;
+    margin: 2px;
+    display: flex;
+}
+
+section[class="upper"] {
+    width: 100%;
+    background-color:white;
+    display: flex;
+    justify-content: center;
+    height: 350px;
+}
+
+#emblem {
+    width: 250px;
+    height: 250px;
+    -webkit-border-radius: 125px;
+    -moz-border-radius: 125px;
+    border-radius: 125px;
+    background: brown; 
+    display: flex;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#emblem p {
+    margin: auto;
+    color: white;
+    font-size:550%;
+}
+
+#brief {
+    width: 500px;
+    margin-left: 50px;
+}
+
+section[class="lower"] {
+    background-color: skyblue;
+    height: 200px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.envelope {
+    width: 300px;
+    height: 150px;
+    background-color: #f4bf70;
+    margin-top: 25px;
+    transition: background-color 0.3s ease;
+}
+
+.envelope:hover {
+    background-color: #997747;
+}
