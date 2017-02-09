@@ -1,0 +1,22 @@
+{
+  "name": "kiroong.me",
+  "version": "1.0.0",
+  "description": "My profile page.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/javelinsman/kiroong.me.git"
+  },
+  "author": "javelinsman",
+  "license": "CC-BY-NC-SA-4.0",
+  "bugs": {
+    "url": "https://github.com/javelinsman/kiroong.me/issues"
+  },
+  "homepage": "https://github.com/javelinsman/kiroong.me#readme",
+  "dependencies": {
+    "express": "^4.14.1"
+  }
+}
