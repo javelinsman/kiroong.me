@@ -8,7 +8,6 @@
 html { height: 100%; }
 
 body {
-    background-color: #e5e0db;
     margin: 0;
     height: 100%;
     font-family: 'Nanum Gothic', sans-serif;
@@ -33,7 +32,6 @@ nav {
 }
 
 
-
 /* 
     Navigation Bar 
 */
@@ -42,12 +40,10 @@ nav {
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    background-color: #f2f2f2;
 }
 
 nav .title {
     margin-left : 15px;
-    color: #6c6c6c;
     font-weight: bold;
     font-family: Arial;
 }
@@ -56,8 +52,6 @@ nav ul {
     list-style-type: none;
     display: flex;
     justify-content: space-around;
-    /*background-color: blue;*/
-    /*width: 20%;*/
     margin: 0; /* 꽉 채움 */
     padding: 0; /* li가 indent 안되도록 함 */
 }
@@ -65,7 +59,6 @@ nav ul {
 nav ul div {
     width: 100px;
     margin: auto;
-    /*background-color: pink;*/
     text-align: center;
 }
 
@@ -83,9 +76,7 @@ nav ul div {
     margin: auto;
     width: 600px;
     height: 50%;
-    background-color: #f2f2f2;
     display: flex;
-    border: 5px solid #7b6953;
 }
 
 .paper .image {
@@ -118,7 +109,6 @@ nav ul div {
 */
 
 #lower {
-    background-color: #343434;
     display:flex;
     justify-content: space-around;
     width: 100%;
@@ -127,18 +117,8 @@ nav ul div {
 #lower button {
     width: 100%;
     border: none;
-    background-color: #343434;
     transition: background-color 0.2s ease;
 }
-
-#lower button:hover {
-    background-color: #14133f;
-}
-
-#lower button:active {
-    background-color: black;
-}
-
 
 #lower button p {
     color: white;
@@ -159,7 +139,7 @@ nav ul div {
 
 #lower .seperator_line{
     width: 0px;
-    height: 85%;
+    height: 100%;
 }
 
 
@@ -174,4 +154,35 @@ nav ul div {
 .paper:active {
     transform: rotateX(180deg);
     height: 75%;
+}
+
+
+/*
+    Colors
+*/
+
+body{
+    background-color: rgb(218,241,248);
+}
+nav {
+    background-color: rgb(248,252,254);
+}
+nav .title {
+    color: #6c6c6c;
+}
+.paper {
+    background-color: white;
+    border: 3px solid gray;
+}
+#lower {
+    background-color: rgb(10,130,188);
+}
+#lower button {
+    background-color: rgb(10,130,188);
+}
+#lower button:hover {
+    background-color: #14133f;
+}
+#lower button:active {
+    background-color: black;
 }
