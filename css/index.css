@@ -73,6 +73,15 @@ nav div ul div {
     background-color: rgba(255, 255, 255, 0.3);
     width: 45%;
     display: flex;
+    padding: 20px;
+}
+
+.panel h1{
+    text-align: center;
+}
+
+.panel h2{
+    text-align: left;
 }
 
 .panel div {
@@ -85,12 +94,14 @@ nav div ul div {
 
 .intro {
     display: flex;
-    margin-top: 5%;
-    border-top: 3px solid rgba(0,0,0,0.1);
+    height: 100%;
 }
 
 .intro aside{
     width: 30%;
+    height: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
     display: flex;
     flex-direction: column;
 }
@@ -99,17 +110,89 @@ nav div ul div {
     display: block;
     margin: auto;
     font-size: 150%;
+    cursor: pointer;
 }
 
-.intro div{
-    width: 70%;
+.vertical_line{
+    width: 0;
+    height: 90%;
+    border-right: 2px solid rgba(0, 0, 0, 0.3);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-.intro div p{
+.intro .description{
+    width: 65%;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.intro .description p{
     font-size: 150%;
     word-break: keep-all;
 }
 
 .highlight {
     font-weight: bold;
+    background-color: skyblue;
+}
+
+/*
+    Objectives
+*/
+
+.objective{
+    display: flex;
+    flex-direction: column;
+    background-color: skyblue;
+    height: 100%;
+}
+
+/*
+    Nalida
+*/
+
+#nalida{
+    display: flex;
+    height: 100%;
+}
+
+#nalida aside{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#nalida aside div{
+    font-size: 150%;
+    margin: auto;
+}
+
+#nalida .description {
+    display: flex;
+    width: 65%;
+    flex-direction: column;
+}
+
+#nalida .description .nav {
+    display: flex;
+    width: 100%;
+    height: 15%;
+}
+
+#nalida .description .nav div {
+    flex-grow: 1;
+    display: flex;
+}
+
+#nalida .description .nav .highlight {
+    background-color: blue;
+    color: white;
+}
+
+#nalida .description .nav div p {
+    margin: auto;
 }
