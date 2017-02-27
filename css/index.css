@@ -120,6 +120,16 @@ nav div div {
     Contents
 */
 
+#debug {
+    position: fixed;
+    top: 50%;
+    display: none;
+}
+
+.fadein {
+    opacity: 0;
+}
+
 #intro h1 {
     color: rgba(0, 0, 0, 0.3);
 }
