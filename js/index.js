@@ -28,6 +28,12 @@ $(document).ready(() => {
                 $(obj).removeClass('fadein');
             }
         });
+        if($('.fadein').length == 1){
+            setTimer(()=>{
+                $('.fadein').animate({'opacity':'1'}, 500);
+                $('.fadein').removeClass('fadein');
+            }, 1000);
+        }
         top1 = $('#intro').offset().top;
         top2 = $('#past').offset().top;
         top3 = $('#objective').offset().top;

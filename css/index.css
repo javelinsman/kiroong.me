@@ -214,6 +214,10 @@ nav div div {
     Objective
 */
 
+#objective{
+    padding-bottom: 15%;
+}
+
 .topic {
     font-size: 150%;
     text-align: center;
@@ -235,6 +239,8 @@ nav div div {
 .container .date {
     text-align: center;
     color: gray;
+    margin-top: 30px;
+    
 }
 
 .incomplete {
