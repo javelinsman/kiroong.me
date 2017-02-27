@@ -38,32 +38,45 @@ nav {
     background-color: rgba(0,0,0,0.5);
     color: white;
     font-weight: bold;
+    margin: 0;
+    padding: 0;
 }
 
 nav div{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height: 50px; /* navigation height */
 }
 
-nav div .title {
+nav div p {
     margin-left : 15px;
     font-weight: bold;
     font-family: Arial;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
-nav div ul {
-    list-style-type: none;
+nav div div {
+    width: 300px;
     display: flex;
     justify-content: space-around;
-    margin: 0; /* 꽉 채움 */
-    padding: 0; /* li가 indent 안되도록 함 */
 }
 
-nav div ul div {
+.pagedown {
     width: 100px;
+    height: 100%;
+    display: flex;
+    cursor: pointer;
+}
+
+.pagedown:hover {
+    background-color: rgba(0,0,0,0.9);
+}
+
+.pagedown p {
+    font-size: 100%;
     margin: auto;
-    text-align: center;
 }
 
 /*
