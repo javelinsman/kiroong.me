@@ -184,10 +184,46 @@ nav div ul div {
     Objective
 */
 
-.image-container {
+.topic {
+    font-size: 150%;
+    text-align: center;
+}
+
+.container{
     width: 100%;
     display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
-.image-container img {
-    margin : auto;
+.container *{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.container .date {
+    text-align: center;
+    color: gray;
+}
+
+.incomplete {
+    display: none;
+}
+
+.complete {
+    display: inline;
+    background-color: green;
+    color: white;
+    font-size: 75%;
+    padding: 5px;
+}
+
+.in-progress {
+    display: inline;
+    background-color: rgb(234, 152, 0);
+    color: white;
+    font-size: 75%;
+    padding: 5px;
+}
+
