@@ -1,5 +1,5 @@
 $(document).ready(() => {
-
+    $('#title .panel').animate({'opacity':1}, 2000);
     $('#b1').click(() => {
         $('html, body').animate({
             scrollTop: $('#title').height() - $('nav').height()
@@ -17,14 +17,39 @@ $(document).ready(() => {
     });
 
     $(window).scroll( function() {
+        var bottom_of_window = $(window).scrollTop() + $(window).height();
+        var middle_of_window = $(window).scrollTop() + $(window).height()/2;
         $('.fadein').each((i, obj) => {
             var bottom_of_object = $(obj).offset().top + $(obj).outerHeight();
-            var bottom_of_window = $(window).scrollTop() + $(window).height();
             var top_of_object = $(obj).offset().top;
-            var middle_of_window = $(window).scrollTop() + $(window).height()/2;
-            if( bottom_of_window > bottom_of_object || middle_of_window > top_of_object){
+            //if( bottom_of_window > bottom_of_object || middle_of_window > top_of_object){
+            if( middle_of_window > top_of_object){
                 $(obj).animate({'opacity':'1'}, 500);
+                $(obj).removeClass('fadein');
             }
         });
+        top1 = $('#intro').offset().top;
+        top2 = $('#past').offset().top;
+        top3 = $('#objective').offset().top;
+        if(top3 < bottom_of_window){
+            $('#b1').removeClass('active-nav');
+            $('#b2').removeClass('active-nav');
+            $('#b3').addClass('active-nav');
+        }
+        else if(top2 < bottom_of_window){
+            $('#b1').removeClass('active-nav');
+            $('#b2').addClass('active-nav');
+            $('#b3').removeClass('active-nav');
+        }
+        else if(top1 < bottom_of_window){
+            $('#b1').addClass('active-nav');
+            $('#b2').removeClass('active-nav');
+            $('#b3').removeClass('active-nav');
+        }
+        else{
+            $('#b1').removeClass('active-nav');
+            $('#b2').removeClass('active-nav');
+            $('#b3').removeClass('active-nav');
+        }
     });
 })

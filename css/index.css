@@ -68,15 +68,21 @@ nav div div {
     height: 100%;
     display: flex;
     cursor: pointer;
+    transition: background-color 0.5s;
+    -webkit-transition: background-color 0.5s;
 }
 
 .pagedown:hover {
-    background-color: rgba(0,0,0,0.9);
+    background-color: rgba(0,0,0,0.5);
 }
 
 .pagedown p {
     font-size: 100%;
     margin: auto;
+}
+
+.active-nav {
+    background-color: rgba(0,0,0,0.5);
 }
 
 /*
@@ -94,7 +100,7 @@ nav div div {
     font-size: 150%;
 }
 
-.panel {
+#title .panel {
     margin-top: auto;
     margin-bottom: auto;
     margin-left: 5%;
@@ -102,17 +108,18 @@ nav div div {
     width: 45%;
     display: flex;
     padding: 20px;
+    opacity: 0;
 }
 
-.panel h1{
+#title .panel h1{
     text-align: center;
 }
 
-.panel h2{
+#title .panel h2{
     text-align: left;
 }
 
-.panel div {
+#title .panel div {
     margin: auto;
 }
 
