@@ -21,6 +21,13 @@ p {
     font-size: 125%;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(44, 117, 190);
+    /*color: rgb(49, 79, 134);*/
+}
+
 /*
     Navigation
 */
@@ -171,4 +178,16 @@ nav div ul div {
     font-weight: bold;
     width: 100%;
     text-align: center;
+}
+
+/*
+    Objective
+*/
+
+.image-container {
+    width: 100%;
+    display: flex;
+}
+.image-container img {
+    margin : auto;
 }
