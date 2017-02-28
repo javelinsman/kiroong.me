@@ -3,7 +3,6 @@
 */
 
 @import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css); 
-@import url(http://fonts.googleapis.com/earlyaccess/nanumpenscript.css); 
 
 html {
     height: 100%;
@@ -92,7 +91,7 @@ nav div div {
 #title {
     display: flex;
     flex-flow: column nowrap;
-    background-image: url("/static/profile.jpg");
+    background-image: url("/static/profile_0.5.jpg");
     background-size: cover;
     background-position: center center;
     /*background-repeat: no-repeat;*/
@@ -185,6 +184,9 @@ nav div div {
 
 
 @media all and (max-width: 992px) {
+p {
+    font-size: 150%;
+}
 .unit{
     flex-direction: column;
 }
@@ -243,6 +245,11 @@ nav div div {
     
 }
 
+.container h1 {
+    margin: 0;
+    font-size: 200%;
+}
+
 .incomplete {
     display: none;
 }
@@ -262,4 +269,3 @@ nav div div {
     font-size: 75%;
     padding: 5px;
 }
-
