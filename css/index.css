@@ -54,6 +54,7 @@ nav div p {
     font-family: Arial;
     margin-top: auto;
     margin-bottom: auto;
+    cursor: default;
 }
 
 nav div div {
