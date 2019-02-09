@@ -92,7 +92,7 @@ nav div div {
 #title {
     display: flex;
     flex-flow: column nowrap;
-    background-image: url("/static/profile_0.5.jpg");
+    background-image: url("../static/profile_0.5.jpg");
     background-size: cover;
     background-position: center center;
     /*background-repeat: no-repeat;*/
